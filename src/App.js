@@ -1,26 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Component } from "react";
 import './App.css';
+import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import { Nav, Navbar} from 'react-bootstrap';
+import Home  from  '../src/components/pages/Home/Home';
+import AbrirChamado from '../src/components/pages/AbrirChamado/AbrirChamado';
+import Login from '../src/components/pages/Login/Login';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+          <div>
+          <Navbar variant="light">
+          <Nav className="mr-auto menu-principal">
+              <li><Link to="/">Home</Link></li> 
+              <li>|</li>
+              <li><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
+              <li>|</li>
+              <li><Link to="/login">Login</Link></li>
+            </Nav>
+          </Navbar>
+          <Switch>
+            <Route exact path={'/'} component={Home} />
+            <Route exact path='/abrir-chamado' component={AbrirChamado} />
+            <Route exact path ={'/login'} component={Login} />
+          </Switch>
+          </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
