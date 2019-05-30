@@ -7,7 +7,7 @@ class CardHome extends Component {
     render(){
         return(
             <div>
-                <Card style={{ width: '18rem' }} className="cardHome">
+                <Card style={{ width: '18rem', backgroundColor: this.props.color }} className="cardHome">
                     <Card.Body>
                         <Card.Title className="alignCenter">{this.props.cardTitle}</Card.Title>
                         <Card.Text>

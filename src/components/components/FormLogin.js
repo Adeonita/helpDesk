@@ -5,7 +5,9 @@ import './FromLogin.css';
 class FormLogin extends Component {
     render(){
         return(
-
+          <div>
+            
+          </div>
         );
     }
 }

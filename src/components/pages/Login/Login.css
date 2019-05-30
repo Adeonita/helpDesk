@@ -1,0 +1,13 @@
+.login{
+  width: 350px;
+  height: 250px;
+  border: white;
+  background: white;
+  padding: 50px;
+  box-shadow: 5px 10px 8px #dddddd;
+}
+
+#margin-top-bottom{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
