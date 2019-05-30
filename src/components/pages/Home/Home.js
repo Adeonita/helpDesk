@@ -10,6 +10,7 @@ import iconUser from '../../../images/iconUser.png';
 import iconTecnico from '../../../images/iconTecnico.png';
 import iconAdm from '../../../images/iconAdm.png';
 import CardFeature from '../../components/CardFeature';
+import {Link} from 'react-router-dom';
 
 
 class Home extends Component {
@@ -20,24 +21,30 @@ class Home extends Component {
                     <h1>Encontrou algum problema na Uneb?<br></br> Fale Conosco</h1>
                     <ImageHome />
                     <Row>
+                      <Link to="/abrir-chamado">
                         <Col md={4}>
                             <CardHome color="#F26419"
                                       cardTitle="Usuário"
                                       description="Cadastre chamados"
                             />
                         </Col>
+                      </Link>
+                      <Link to="/login">
                         <Col md={4}>
                             <CardHome color="#F26419"
                                       cardTitle="Técnico"
                                       description="Atenda Chamados"
                             />
                         </Col>
+                      </Link>
+                      <Link to="/login">
                         <Col md={4}>
                             <CardHome color="#F26419"
                                       cardTitle="Administrativo"
                                       description="Administre chamados"
                             />
                         </Col>
+                      </Link>
                     </Row>
                 </Container>
                 <Container>
@@ -65,7 +72,7 @@ class Home extends Component {
                       <Col md={8}>
                         <Row  className="justify-content-center">
                           <Col md={4}>
-                            <CardFeature color="#5ec2b7" titleCard="Técnico" description="Através do seu próprio painel aceite, redirecione e finalize chamados abertos pelo usuários"/>
+                            <CardFeature titleCard="Técnico" description="Através do seu próprio painel aceite, redirecione e finalize chamados abertos pelo usuários"/>
                           </Col>
                         </Row>
                       </Col>
@@ -84,7 +91,7 @@ class Home extends Component {
                     <Col md={8}>
                       <Row  className="justify-content-center">
                         <Col md={4}>
-                          <CardFeature color="#E55934" titleCard="Administrativo" description="Por meio de gráficos interativos monitore sua equipe de técnicos e o sistema como um todo"/>
+                          <CardFeature titleCard="Administrativo" description="Por meio de gráficos interativos monitore sua equipe de técnicos e o sistema como um todo"/>
                         </Col>
                       </Row>
                     </Col>
