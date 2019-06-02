@@ -1,8 +1,7 @@
 .footer-left{
-    -webkit-clip-path: polygon(0 90%, 100% 33%, 100% 100%, 0 100%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
-    clip-path: polygon(0 90%, 100% 33%, 100% 100%, 0 100%);
-    width: 100%;
-    height: 200px;
-    margin-top: -200px;
-    transform: scaleX(-1);    
+  -webkit-clip-path: polygon(0 100%, 100% 33%, 100% 100%, 0 100%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
+  clip-path: polygon(0 29%, 100% 100%, 100% 100%, 0 100%);
+  width: 100%;
+  height: 200px;
+  margin-top: -200px;
 }

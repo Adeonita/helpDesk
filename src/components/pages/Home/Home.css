@@ -23,7 +23,7 @@
   -webkit-clip-path: polygon(0 15%, 100% 10%, 100% 90%, 0 90%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
   clip-path: polygon(0 15%, 100% 10%, 100% 90%, 0 90%);
   background: #F26419;
-  padding-top: 50px;
+  padding-top: 163px;
 }
 
 .section-tecnico{
@@ -33,7 +33,7 @@
   clip-path: polygon(0 10%, 100% 22%, 100% 70%, 0 90%);
   background: #5ec2b7;
   margin-top: -240px;
-  padding-top: 50px;
+  padding-top: 163px;
 }
 
 .section-adm{
@@ -42,7 +42,7 @@
   -webkit-clip-path: polygon(0 22%, 100% 10%, 100% 90%, 0 76%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
   clip-path: polygon(0 22%, 100% 10%, 100% 90%, 0 76%);
   background: #E55934;
-  padding-top: 60px;
+  padding-top: 173px;
   margin-top: -280px;
 }
 
@@ -59,3 +59,4 @@
 .margin-left{
   margin-right: 100px;
 }
+

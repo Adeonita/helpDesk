@@ -6,7 +6,7 @@ import '../../App.css';
 class FooterLeft extends Component {
   render(){
     return(
-      <div className="footer-left" style={{backgroundColor: this.props.color}}>
+      <div className="footer-left wow fadeInRight" style={{backgroundColor: this.props.color}}>
       </div>
     );
   }

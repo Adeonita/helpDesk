@@ -7,7 +7,7 @@ import { Card, Row, Col, Container, Form, Button } from 'react-bootstrap';
 class FormChamado extends Component {
     render(){
         return(
-          <div>
+          <div className="wow fadeInDown">
               <Container>
                   <Row className="justify-content-center" id="margin-top-bottom">
                     <Col md={4}>

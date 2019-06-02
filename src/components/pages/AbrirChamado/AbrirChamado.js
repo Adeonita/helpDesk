@@ -3,7 +3,8 @@ import { Component } from "react";
 import '../../../App.css';
 import './AbrirChamado.css';
 import FormChamado from '../../components/FormChamado';
-import FooterRigth from '../../components/FooterRigth';
+import FooterRight from '../../components/FooterRight';
+
 
 class AbrirChamado extends Component{
     render(){
@@ -12,8 +13,8 @@ class AbrirChamado extends Component{
                 <div className="container">
                 <h1>Abrir Chamado</h1>
                 </div>
-                <FormChamado />
-                <FooterRigth color="#F26419" />
+                <FormChamado  />
+                <FooterRight marginTop="-100px" color="#F26419"/>
             </div>
 
         );

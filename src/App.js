@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <div>
+          <div className="marginMenu">
           <Navbar variant="light">
           <Nav className="mr-auto menu-principal">
               <li><Link to="/">Home</Link></li> 
