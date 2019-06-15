@@ -10,43 +10,43 @@ class FormChamado extends Component {
           <div className="wow fadeInDown">
             <Container>
               <Card className="chamado">
-                <Form>
-                  <Row className="justify-content-center" id="margin-top-bottom">
+                <Form method="post">
+                  <Row className="justify-content-center"> {/*Esse id está em login.css*/}
                     <Col md={12}>
                       <Row className="justify-content-center">
                         <Form.Group controlId="ControlSelect1">
                           <Form.Control as="select">
                             <option require>Área de chamado</option>
-                            <option value="ti">Ti</option>
-                            <option value="nupe">NUPE</option>
-                            <option value="academica">Acadêmica</option>
-                            <option value="financeiro">Financeiro</option>
-                            <option value="administrativo">Administrativo</option>
-                            <option value="comunicacao">Comunicação</option>
+                            <option name="ti">Ti</option>
+                            <option name="nupe">NUPE</option>
+                            <option name="academica">Acadêmica</option>
+                            <option name="financeiro">Financeiro</option>
+                            <option name="administrativo">Administrativo</option>
+                            <option name="comunicacao">Comunicação</option>
                           </Form.Control>
                         </Form.Group>
                       </Row>
                     </Col>
                     <Col md={4}>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu nome" />
+                        <Form.Control type="text" placeholder="Seu nome" name="nome" />
                       </Form.Group>
                       <Form.Group controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Seu e-mail" />
+                        <Form.Control type="email" placeholder="Seu e-mail" name="email"/>
                       </Form.Group>
                     </Col>
                     <Col md={4}>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu número" />
+                        <Form.Control type="text" placeholder="Seu número" name="numero"/>
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu cpf" />
+                        <Form.Control type="text" placeholder="Seu cpf" name="cpf"/>
                       </Form.Group>
                     </Col>
                   </Row>
                   <Row className="justify-content-center">
                     <Form.Group controlId="ControlTextarea1">
-                      <Form.Control as="textarea" rows="3" cols="100" placeholder="Escreva sua menssagem"/>
+                      <Form.Control as="textarea" rows="3" cols="80" placeholder="Escreva sua menssagem" name="menssagem"/>
                     </Form.Group>
                   </Row>
                   <Row className="justify-content-center">
@@ -58,7 +58,6 @@ class FormChamado extends Component {
             </Card>
           </Container>
         </div>
-
         );
     }
 }
