@@ -15,20 +15,21 @@ class FormLogin extends Component {
                           <Form.Group controlId="formBasicEmail">
                             <Form.Control type="email" placeholder="nome@dominio.com" />
                           </Form.Group>
-
                           <Form.Group controlId="formBasicPassword">
                             <Form.Control type="password" placeholder="Sua senha" />
                           </Form.Group>
-                          <Button variant="outline-primary" type="submit">
-                            Submit
-                          </Button>
+                          <Row className="justify-content-center">
+                            <Button variant="outline-primary" type="submit">
+                              Submit
+                            </Button>
+                          </Row>
                         </Form>
                       </Card>
                     </Col>
                 </Row>
             </Container>
-  
-          </div>  
+
+          </div>
         );
     }
 }

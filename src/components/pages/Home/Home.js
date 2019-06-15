@@ -98,12 +98,10 @@ class Home extends Component {
                   </Row>
                   </div>
                 </Container >
-                <Container fluid={true} className="wow fadeInLeft" data-wow-duration="3s"> 
+                <Container fluid={true} className="wow fadeInLeft" data-wow-duration="3s">
                   <div className="section-footerA">
                   </div>
-                  <div className="section-footerB">
-                  </div>
-
+                
                 </Container>
               </div>
         );
