@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
-import WOW from 'wow.js'; 
+import WOW from 'wow.js';
 import 'animate.css';
 
 
@@ -20,5 +20,3 @@ ReactDOM.render(
 serviceWorker.unregister();
 
 new WOW().init();
-
-

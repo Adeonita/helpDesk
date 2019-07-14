@@ -14,17 +14,7 @@ class FormChamado extends Component {
                   <Row className="justify-content-center"> {/*Esse id está em login.css*/}
                     <Col md={12}>
                       <Row className="justify-content-center">
-                        <Form.Group controlId="ControlSelect1">
-                          <Form.Control as="select">
-                            <option require>Área de chamado</option>
-                            <option name="ti">Ti</option>
-                            <option name="nupe">NUPE</option>
-                            <option name="academica">Acadêmica</option>
-                            <option name="financeiro">Financeiro</option>
-                            <option name="administrativo">Administrativo</option>
-                            <option name="comunicacao">Comunicação</option>
-                          </Form.Control>
-                        </Form.Group>
+
                       </Row>
                     </Col>
                     <Col md={4}>
@@ -34,6 +24,17 @@ class FormChamado extends Component {
                       <Form.Group controlId="formBasicEmail">
                         <Form.Control type="email" placeholder="Seu e-mail" name="email"/>
                       </Form.Group>
+                      <Form.Group controlId="ControlSelect1">
+                        <Form.Control as="select" name="area" required>
+                          <option value="" >Área de chamado</option>
+                          <option name="ti">Ti</option>
+                          <option name="nupe">NUPE</option>
+                          <option name="academica">Acadêmica</option>
+                          <option name="financeiro">Financeiro</option>
+                          <option name="administrativo">Administrativo</option>
+                          <option name="comunicacao">Comunicação</option>
+                        </Form.Control>
+                      </Form.Group>
                     </Col>
                     <Col md={4}>
                       <Form.Group controlId="formBasicText">
@@ -41,6 +42,9 @@ class FormChamado extends Component {
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
                         <Form.Control type="text" placeholder="Seu cpf" name="cpf"/>
+                      </Form.Group>
+                      <Form.Group controlId="formBasicFile">
+                        <Form.Control type="file" placeholder="Anexo" name="anexo"/>
                       </Form.Group>
                     </Col>
                   </Row>
