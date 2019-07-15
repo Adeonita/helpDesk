@@ -1,10 +1,11 @@
 .chamado{
   width: 900px;
-  height: 350px;
+  height: 370px;
   border: white;
   background: white;
   box-shadow: 5px 10px 8px #dddddd;
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 24px;
   margin-bottom: 50px;
+  padding: 44px;
 }
