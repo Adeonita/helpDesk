@@ -49,6 +49,12 @@ body{
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+th, td{
+  font-family: 'Nanum Gothic', sans-serif;
+  color:  #272725;
+}
+
+
 .div-diagonal{
   position: relative;
   width: 100%;
