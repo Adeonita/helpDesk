@@ -1,10 +1,10 @@
 import React from 'react';
 import { Component } from "react";
-import './FormChamado.css';
+import './FormCadastrarTecnico.css';
 import { Card, Row, Col, Container, Form, Button } from 'react-bootstrap';
 
 
-class FormChamado extends Component {
+class FormCadastrarTecnico extends Component {
     render(){
         return(
           <div className="wow fadeInDown">
@@ -14,19 +14,24 @@ class FormChamado extends Component {
                   <Row className="justify-content-center"> {/*Esse id está em login.css*/}
                     <Col md={12}>
                       <Row className="justify-content-center">
-
                       </Row>
                     </Col>
                     <Col md={4}>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu nome" name="nome" />
+                        <Form.Control type="text" placeholder="Nome" name="nome" />
                       </Form.Group>
                       <Form.Group controlId="formBasicEmail">
-                        <Form.Control type="email" placeholder="Seu e-mail" name="email"/>
+                        <Form.Control type="email" placeholder="E-mail" name="email"/>
+                      </Form.Group>
+                      <Form.Group controlId="formBasicText">
+                        <Form.Control type="text" placeholder="Cargo" name="cargo"/>
+                      </Form.Group>
+                      <Form.Group controlId="formBasicText">
+                        <Form.Control type="text" placeholder="Login" name="login"/>
                       </Form.Group>
                       <Form.Group controlId="ControlSelect1">
                         <Form.Control as="select" name="area" required>
-                          <option value="" >Área de chamado</option>
+                          <option value="" >Setor</option>
                           <option name="ti">Ti</option>
                           <option name="nupe">NUPE</option>
                           <option name="academica">Acadêmica</option>
@@ -38,37 +43,29 @@ class FormChamado extends Component {
                     </Col>
                     <Col md={4}>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu número" name="numero"/>
+                        <Form.Control type="text" placeholder="Número" name="numero"/>
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu cpf" name="cpf"/>
+                        <Form.Control type="text" placeholder="Cpf" name="cpf"/>
                       </Form.Group>
-                      <Form.Group controlId="formBasicFile">
-                        <Form.Control type="file" placeholder="Anexo" name="anexo"/>
+                      <Form.Group controlId="formBasicText">
+                        <Form.Control type="password" placeholder="Senha" name="senha"/>
                       </Form.Group>
-                    </Col>
-                  </Row>
-                  <Row className="justify-content-center">
-                    <Col md={8}>
+                      <Form.Group controlId="formBasicText">
+                        <Form.Control type="text" placeholder="Matricula" name="matricula"/>
+                      </Form.Group>
                       <Form.Group controlId="ControlSelect1">
                         <Form.Control as="select" name="area" required>
-                          <option value="" >Descrição do Problema</option>
-                          <option name="ti">Monitor quebrado</option>
-                          <option name="nupe">Teclado quebrado</option>
-                          <option name="academica">Impressora quebrada</option>
-                          <option name="financeiro">Outros</option>
+                          <option value="" >Tipo</option>
+                          <option name="tecnico">Técnico</option>
+                          <option name="administrador">Administrador</option>
                         </Form.Control>
                       </Form.Group>
                     </Col>
                   </Row>
                   <Row className="justify-content-center">
-                    <Form.Group controlId="ControlTextarea1">
-                      <Form.Control as="textarea" rows="3" cols="80" placeholder="Escreva sua menssagem" name="menssagem"/>
-                    </Form.Group>
-                  </Row>
-                  <Row className="justify-content-center">
                     <Button variant="outline-primary" type="submit">
-                      Submit
+                      Casdastrar
                     </Button>
                   </Row>
                 </Form>
@@ -79,4 +76,4 @@ class FormChamado extends Component {
     }
 }
 
-export default FormChamado;
+export default FormCadastrarTecnico;

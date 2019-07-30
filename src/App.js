@@ -9,6 +9,7 @@ import Login from './components/pages/Login/Login';
 import ConsultarChamado from './components/pages/ConsultarChamado/ConsultarChamado';
 import Chamados from './components/pages/Chamados/Chamados';
 import './style/css/bootstrap.min.css';
+import CadastrarTecnico from './components/pages/CadastrarTecnico/CadastrarTecnico';
 
 class App extends Component {
   render() {
@@ -26,6 +27,8 @@ class App extends Component {
               <li><Link to="/consultar-chamado">Consultar Chamado</Link></li>
               <li>|</li>
               <li><Link to="/chamados">Chamados</Link></li>
+              <li>|</li>
+              <li><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
             </Nav>
           </Navbar>
           <Switch>
@@ -34,6 +37,7 @@ class App extends Component {
             <Route exact path={'/login'} component={Login} />
             <Route exact path={'/consultar-chamado'} component={ConsultarChamado}/>
             <Route exact path={'/chamados'} component={Chamados}/>
+            <Route exact path={'/cadastrar-tecnico'} component={CadastrarTecnico}/>
           </Switch>
           </div>
       </Router>
