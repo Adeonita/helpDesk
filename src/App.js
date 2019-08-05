@@ -25,12 +25,12 @@ class App extends Component {
               </Navbar.Brand>
             </Navbar>
             <Nav className="mr-auto menu-principal">
-                <li className="hvr-underline-from-left"><Link to="/">Home</Link></li>
-                <li className="hvr-underline-from-left"><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
-                <li className="hvr-underline-from-left"><Link to="/login">Login</Link></li>
-                <li className="hvr-underline-from-left"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
-                <li className="hvr-underline-from-left"><Link to="/chamados">Chamados</Link></li>
-                <li className="hvr-underline-from-left"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/">Home</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/login">Login</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/chamados">Chamados</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
               </Nav>
             </Navbar>
           </div>

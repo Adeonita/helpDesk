@@ -95,7 +95,7 @@ class Home extends Component {
                 <Container fluid={true} className="wow fadeInLeft section-footerA" data-wow-duration="3s">
                   <Row className="marginTop margin-bottom">
                     <Col md={12} className="text-center text-footer">
-                      <p>Universidade Estadual da Bahia <br></br>Silveira Martins<br></br>Salvador - BA</p>
+                      <p>Universidade Estadual da Bahia <br></br>Silveira Martins nº 2555, Cabula<br></br>Salvador - BA</p>
                     </Col>
                   </Row>          
                 </Container>
