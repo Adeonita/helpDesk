@@ -4,6 +4,7 @@ import '../../../App.css';
 import './AbrirChamado.css';
 import FormChamado from '../../components/FormChamado';
 import FooterRight from '../../components/FooterRight';
+import FooterLeft from '../../components/FooterLeft';
 
 
 class AbrirChamado extends Component{
@@ -14,7 +15,10 @@ class AbrirChamado extends Component{
                 <h1>Abrir Chamado</h1>
                 </div>
                 <FormChamado  />
-                <FooterRight marginTop="-100px" color="#F26419"/>
+                <div>
+                  <FooterRight color="#0F3882" />
+                  <FooterLeft color="#F24141" />
+                </div>
             </div>
 
         );

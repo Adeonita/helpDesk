@@ -20,7 +20,7 @@ class FormLogin extends Component {
                           </Form.Group>
                           <Row className="justify-content-center">
                             <Button variant="outline-primary" type="submit">
-                              Submit
+                              Entrar
                             </Button>
                           </Row>
                         </Form>

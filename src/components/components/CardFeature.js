@@ -8,8 +8,8 @@ class Circle extends Component{
     return(
       <div className="border-radius">
         <Container className="margin-top">
-          <h2>{this.props.titleCard}</h2>
-          {this.props.description}
+          <h2 className="title-card">{this.props.titleCard}</h2>
+          <p>{this.props.description}</p>
         </Container>
       </div>
     );

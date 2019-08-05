@@ -9,9 +9,6 @@
 .marginTop{
     margin-top: 100px;
 }
-.margin-bottom{
-  margin-bottom: 100px;
-}
 
 #circleUser{
   margin-left: 100px;
@@ -22,8 +19,8 @@
   height: 700px;
   -webkit-clip-path: polygon(0 15%, 100% 10%, 100% 90%, 0 90%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
   clip-path: polygon(0 15%, 100% 10%, 100% 90%, 0 90%);
-  background: #F26419;
   padding-top: 163px;
+  background-color: #F24141;
 }
 
 .section-tecnico{
@@ -31,9 +28,9 @@
   height: 700px;
   -webkit-clip-path: polygon(0 10%, 100% 22%, 100% 70%, 0 90%);
   clip-path: polygon(0 10%, 100% 22%, 100% 70%, 0 90%);
-  background: #5ec2b7;
   margin-top: -240px;
   padding-top: 163px;
+  background-color: #2F71DA;
 }
 
 .section-adm{
@@ -41,7 +38,7 @@
   height: 700px;
   -webkit-clip-path: polygon(0 22%, 100% 10%, 100% 90%, 0 76%); /*(Canto Esquerdo superior, Canto Direito superior, canto direito inferior, canto esquerdo inferior )*/
   clip-path: polygon(0 22%, 100% 10%, 100% 90%, 0 76%);
-  background: #E55934;
+  background-color: #F24141;
   padding-top: 173px;
   margin-top: -280px;
 }
@@ -51,12 +48,17 @@
   height: 300px;
   -webkit-clip-path: polygon(0 10%, 100% 30%, 100% 100%, 0 100%);
   clip-path: polygon(0 10%, 100% 30%, 100% 100%, 0 100%);
-  background: #fde74c;
+  background-color: #2F71DA;
   margin-top: -220px;
   color: white;
 }
 
 .margin-left{
   margin-right: 100px;
+}
+
+h2 {
+  color: white;
+  
 }
 

@@ -9,28 +9,31 @@ import Login from './components/pages/Login/Login';
 import ConsultarChamado from './components/pages/ConsultarChamado/ConsultarChamado';
 import Chamados from './components/pages/Chamados/Chamados';
 import './style/css/bootstrap.min.css';
+import logoUneb from '../src/images/logo.png';
 import CadastrarTecnico from './components/pages/CadastrarTecnico/CadastrarTecnico';
+
 
 class App extends Component {
   render() {
     return (
       <Router>
-          <div className="marginMenu">
-          <Navbar variant="light">
-          <Nav className="mr-auto menu-principal">
-              <li><Link to="/">Home</Link></li>
-              <li>|</li>
-              <li><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
-              <li>|</li>
-              <li><Link to="/login">Login</Link></li>
-              <li>|</li>
-              <li><Link to="/consultar-chamado">Consultar Chamado</Link></li>
-              <li>|</li>
-              <li><Link to="/chamados">Chamados</Link></li>
-              <li>|</li>
-              <li><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
-            </Nav>
-          </Navbar>
+          <div className="header">
+            <Navbar variant="light">
+            <Navbar>
+              <Navbar.Brand>
+                <img src={logoUneb} height="100px"/>
+              </Navbar.Brand>
+            </Navbar>
+            <Nav className="mr-auto menu-principal">
+                <li className="hvr-underline-from-left"><Link to="/">Home</Link></li>
+                <li className="hvr-underline-from-left"><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
+                <li className="hvr-underline-from-left"><Link to="/login">Login</Link></li>
+                <li className="hvr-underline-from-left"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
+                <li className="hvr-underline-from-left"><Link to="/chamados">Chamados</Link></li>
+                <li className="hvr-underline-from-left"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
+              </Nav>
+            </Navbar>
+          </div>
           <Switch>
             <Route exact path={'/'} component={Home} />
             <Route exact path={'/abrir-chamado'} component={AbrirChamado} />
@@ -39,7 +42,7 @@ class App extends Component {
             <Route exact path={'/chamados'} component={Chamados}/>
             <Route exact path={'/cadastrar-tecnico'} component={CadastrarTecnico}/>
           </Switch>
-          </div>
+          
       </Router>
     );
   }

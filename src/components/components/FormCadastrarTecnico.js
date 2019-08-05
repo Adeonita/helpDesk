@@ -1,16 +1,31 @@
 import React from 'react';
 import { Component } from "react";
 import './FormCadastrarTecnico.css';
+import CPFInput from './CPFInput.js';
 import { Card, Row, Col, Container, Form, Button } from 'react-bootstrap';
 
 
 class FormCadastrarTecnico extends Component {
+  
+  
+    constructor(props) {
+      super(props);     
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+    handleSubmit(event) {
+      event.preventDefault();
+      if( !window.isValidCPF ) {
+         alert('CPF informado é inválido!');
+      }
+    }
+  
     render(){
         return(
           <div className="wow fadeInDown">
             <Container>
               <Card className="chamado">
-                <Form method="post">
+                <Form onSubmit={this.handleSubmit}>
                   <Row className="justify-content-center"> {/*Esse id está em login.css*/}
                     <Col md={12}>
                       <Row className="justify-content-center">
@@ -46,7 +61,7 @@ class FormCadastrarTecnico extends Component {
                         <Form.Control type="text" placeholder="Número" name="numero"/>
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Cpf" name="cpf"/>
+                        <CPFInput className="form-control" placeholder="Cpf" name="cpf" />
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
                         <Form.Control type="password" placeholder="Senha" name="senha"/>

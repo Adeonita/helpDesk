@@ -23,7 +23,7 @@ class Home extends Component {
                     <Row>
                       <Link to="/abrir-chamado">
                         <Col md={4} className="wow fadeInLeft">
-                            <CardHome color="#F26419"
+                            <CardHome color="#0F3882"
                                       cardTitle="Usuário"
                                       description="Cadastre chamados"
                             />
@@ -31,7 +31,7 @@ class Home extends Component {
                       </Link>
                       <Link to="/login">
                         <Col md={4} className="wow fadeInUp">
-                            <CardHome color="#F26419"
+                            <CardHome color="#0F3882"
                                       cardTitle="Técnico"
                                       description="Atenda Chamados"
                             />
@@ -39,7 +39,7 @@ class Home extends Component {
                       </Link>
                       <Link to="/login">
                         <Col md={4} className="wow fadeInRight">
-                            <CardHome color="#F26419"
+                            <CardHome color="#0F3882"
                                       cardTitle="Administrativo"
                                       description="Administre chamados"
                             />
@@ -50,8 +50,7 @@ class Home extends Component {
                 <Container>
                     <h1>Funcionalidades especificas para cada usuário</h1>
                 </Container>
-                <Container fluid={true} className="paddingCardHome" >
-                  <div className="section-user wow fadeInRight" data-wow-duration="3s">
+                <Container fluid={true} className="paddingCardHome section-user wow fadeInRight"  data-wow-duration="3s">
                     <Row className="textCenter marginTop">
                       <Col md={4}>
                         <IconHome src={iconUser}/>
@@ -64,10 +63,8 @@ class Home extends Component {
                           </Row>
                       </Col>
                     </Row>
-                  </div>
                 </Container>
-                <Container fluid={true} className="paddingCardHome">
-                  <div className="section-tecnico wow fadeInLeft " data-wow-duration="3s" >
+                <Container fluid={true} className="paddingCardHome section-tecnico wow fadeInLeft"  data-wow-duration="3s">
                     <Row className="textCenter marginTop">
                       <Col md={8}>
                         <Row  className="justify-content-center">
@@ -80,10 +77,8 @@ class Home extends Component {
                         <IconHome src={iconTecnico}/>
                       </Col>
                     </Row>
-                  </div>
                 </Container>
-                <Container fluid={true} className="paddingCardHome">
-                  <div className="section-adm wow fadeInRight " data-wow-duration="3s">
+                <Container fluid={true} className="section-adm wow fadeInRight paddingCardHome" data-wow-duration="3s">
                   <Row className="marginTop margin-bottom">
                     <Col md={4}>
                       <IconHome src={iconAdm}/>
@@ -96,12 +91,13 @@ class Home extends Component {
                       </Row>
                     </Col>
                   </Row>
-                  </div>
                 </Container >
-                <Container fluid={true} className="wow fadeInLeft" data-wow-duration="3s">
-                  <div className="section-footerA">
-                  </div>
-                
+                <Container fluid={true} className="wow fadeInLeft section-footerA" data-wow-duration="3s">
+                  <Row className="marginTop margin-bottom">
+                    <Col md={12} className="text-center text-footer">
+                      <p>Universidade Estadual da Bahia <br></br>Silveira Martins<br></br>Salvador - BA</p>
+                    </Col>
+                  </Row>          
                 </Container>
               </div>
         );

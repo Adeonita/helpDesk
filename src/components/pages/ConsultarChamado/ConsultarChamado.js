@@ -2,8 +2,24 @@ import React, { Component } from 'react';
 import './ConsultarChamado.css';
 import '../../../App.css';
 import {Container, Row, Col, Form, Card, Button} from 'react-bootstrap';
+import FooterRight from '../../components/FooterRight';
+import FooterLeft from '../../components/FooterLeft';
+import CPFInput from '../../components/CPFInput.js';
 
 class ConsultarChamado extends Component {
+  
+  constructor(props) {
+    super(props);     
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleSubmit(event) {
+    event.preventDefault();
+    if( !window.isValidCPF ) {
+       alert('CPF informado é inválido!');
+    }
+  }
+  
   render(){
     return(
       <div>
@@ -25,7 +41,7 @@ class ConsultarChamado extends Component {
                         </Form.Group>
                         <Row className="justify-content-center">
                           <Button variant="outline-primary" type="submit">
-                            Submit
+                           Consultar
                           </Button>
                         </Row>
                       </Form>
@@ -34,13 +50,13 @@ class ConsultarChamado extends Component {
                   <Col md={5} className="text-center">
                     <h2 className="mb-4">Listar meus chamados</h2>
                     <Card className="login card-listar-chamados m-auto">
-                      <Form>
+                      <Form onSubmit={this.handleSubmit}>
                         <Form.Group controlId="formBasicText">
-                          <Form.Control type="Text" placeholder="Seu cpf" />
+                          <CPFInput className="form-control" placeholder="Cpf" name="cpf" />
                         </Form.Group>
                         <Row className="justify-content-center">
                           <Button variant="outline-primary" type="submit">
-                            Submit
+                             Listar
                           </Button>
                         </Row>
                       </Form>
@@ -49,6 +65,10 @@ class ConsultarChamado extends Component {
               </Row>
 
         </Container>
+        <div>
+          <FooterRight color="#0F3882" />
+          <FooterLeft color="#F24141" />
+        </div>
       </div>
     );
   }

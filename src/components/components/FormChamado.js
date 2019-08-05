@@ -68,7 +68,7 @@ class FormChamado extends Component {
                   </Row>
                   <Row className="justify-content-center">
                     <Button variant="outline-primary" type="submit">
-                      Submit
+                      Criar chamado
                     </Button>
                   </Row>
                 </Form>
