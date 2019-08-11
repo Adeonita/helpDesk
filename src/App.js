@@ -20,17 +20,19 @@ class App extends Component {
           <div className="header">
             <Navbar variant="light">
             <Navbar>
-              <Navbar.Brand>
-                <img src={logoUneb} height="100px"/>
+              <Navbar.Brand className=" wow fadeIn" data-wow-duration="2s">
+                <Link to="/">
+                  <img src={logoUneb} height="100px"/>
+                </Link>
               </Navbar.Brand>
             </Navbar>
             <Nav className="mr-auto menu-principal">
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/">Home</Link></li>
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/login">Login</Link></li>
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/chamados">Chamados</Link></li>
-                <li className="hvr-underline-from-left wow fadeIn"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/">Home</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/abrir-chamado">Abrir Chamado</Link ></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/login">Login</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/chamados">Chamados</Link></li>
+                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
               </Nav>
             </Navbar>
           </div>
