@@ -25,7 +25,7 @@ class ListaChamados extends Component {
                   )
     }
     return(
-      <Table responsive className="lista-chamados" >
+      <Table responsive className="lista-chamados wow zoomIn" >
         <thead>
           <tr>
             <th style={removeBordaTopo}>Prioridade</th>

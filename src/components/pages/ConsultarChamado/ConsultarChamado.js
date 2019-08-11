@@ -7,9 +7,9 @@ import FooterLeft from '../../components/FooterLeft';
 import CPFInput from '../../components/CPFInput.js';
 
 class ConsultarChamado extends Component {
-  
+
   constructor(props) {
-    super(props);     
+    super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -19,7 +19,7 @@ class ConsultarChamado extends Component {
        alert('CPF informado é inválido!');
     }
   }
-  
+
   render(){
     return(
       <div>
@@ -65,7 +65,7 @@ class ConsultarChamado extends Component {
               </Row>
 
         </Container>
-        <div>
+        <div className="footer-consultar-chamado">
           <FooterRight color="#0F3882" />
           <FooterLeft color="#F24141" />
         </div>

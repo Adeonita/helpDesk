@@ -17,7 +17,7 @@ class CadastrarTecnico extends Component {
             </Col>
           </Row>
         </Container>
-        <div>
+        <div className="footer-cadastrar-tecnico">
           <FooterRight color="#0F3882" />
           <FooterLeft color="#F24141" />
         </div>

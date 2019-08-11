@@ -42,7 +42,7 @@ class App extends Component {
             <Route exact path={'/chamados'} component={Chamados}/>
             <Route exact path={'/cadastrar-tecnico'} component={CadastrarTecnico}/>
           </Switch>
-          
+
       </Router>
     );
   }

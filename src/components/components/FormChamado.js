@@ -2,9 +2,22 @@ import React from 'react';
 import { Component } from "react";
 import './FormChamado.css';
 import { Card, Row, Col, Container, Form, Button } from 'react-bootstrap';
-
+import CPFInput from './CPFInput.js';
 
 class FormChamado extends Component {
+
+    constructor(props) {
+      super(props);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    /*Valida submit do form*/
+    handleSubmit(event) {
+      event.preventDefault();
+      if( !window.isValidCPF ) {
+         alert('CPF informado é inválido!');
+      }
+    }
+
     render(){
         return(
           <div className="wow fadeInDown">
@@ -41,7 +54,7 @@ class FormChamado extends Component {
                         <Form.Control type="text" placeholder="Seu número" name="numero"/>
                       </Form.Group>
                       <Form.Group controlId="formBasicText">
-                        <Form.Control type="text" placeholder="Seu cpf" name="cpf"/>
+                        <CPFInput className="form-control" placeholder="Cpf" name="cpf" />
                       </Form.Group>
                       <Form.Group controlId="formBasicFile">
                         <Form.Control type="file" placeholder="Anexo" name="anexo"/>

@@ -15,7 +15,7 @@ class AbrirChamado extends Component{
                 <h1>Abrir Chamado</h1>
                 </div>
                 <FormChamado  />
-                <div>
+                <div className="footer-abrir-chamado">
                   <FooterRight color="#0F3882" />
                   <FooterLeft color="#F24141" />
                 </div>

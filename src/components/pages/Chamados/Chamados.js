@@ -11,7 +11,7 @@ class Chamados extends Component {
         <Container fluid={true}>
         <Row>
           <Col>
-            <ListaChamados  />
+            <ListaChamados />
           </Col>
         </Row>
         </Container>
