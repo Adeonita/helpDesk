@@ -23,7 +23,7 @@ class FormChamado extends Component {
           <div className="wow fadeInDown">
             <Container>
               <Card className="chamado">
-                <Form method="post">
+                <Form onSubmit={this.handleSubmit}>
                   <Row className="justify-content-center"> {/*Esse id está em login.css*/}
                     <Col md={12}>
                       <Row className="justify-content-center">
@@ -80,7 +80,7 @@ class FormChamado extends Component {
                     </Form.Group>
                   </Row>
                   <Row className="justify-content-center">
-                    <Button variant="outline-primary" type="submit">
+                    <Button variant="outline-primary" type="submit" >
                       Criar chamado
                     </Button>
                   </Row>

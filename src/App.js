@@ -2,7 +2,7 @@ import React from 'react';
 import { Component } from "react";
 import './App.css';
 import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import { Nav, Navbar} from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown} from 'react-bootstrap';
 import Home  from  './components/pages/Home/Home';
 import AbrirChamado from './components/pages/AbrirChamado/AbrirChamado';
 import Login from './components/pages/Login/Login';
@@ -11,6 +11,7 @@ import Chamados from './components/pages/Chamados/Chamados';
 import './style/css/bootstrap.min.css';
 import logoUneb from '../src/images/logo.png';
 import CadastrarTecnico from './components/pages/CadastrarTecnico/CadastrarTecnico';
+import CadastrarAreasProblemas from './components/pages/CadastrarAreas-Problemas/CadastrarAreas-Problemas';
 
 
 class App extends Component {
@@ -32,7 +33,12 @@ class App extends Component {
                 <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/login">Login</Link></li>
                 <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/consultar-chamado">Consultar Chamado</Link></li>
                 <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/chamados">Chamados</Link></li>
-                <li className="hvr-underline-from-left wow fadeIn" data-wow-duration="2s"><Link to="/cadastrar-tecnico">Cadastrar Técnicos</Link></li>
+                <li className="wow fadeIn" data-wow-duration="2s">
+                  <NavDropdown className="margin-dropdown" title="Cadastrar" id="basic-nav-dropdown">
+                    <NavDropdown.Item><Link to="/cadastrar-tecnico">Funcionários</Link></NavDropdown.Item>
+                    <NavDropdown.Item><Link to="/cadastrar-areas-problemas">Áreas e Problemas</Link></NavDropdown.Item>
+                  </NavDropdown>
+                </li>
               </Nav>
             </Navbar>
           </div>
@@ -43,6 +49,7 @@ class App extends Component {
             <Route exact path={'/consultar-chamado'} component={ConsultarChamado}/>
             <Route exact path={'/chamados'} component={Chamados}/>
             <Route exact path={'/cadastrar-tecnico'} component={CadastrarTecnico}/>
+            <Route exact path={'/cadastrar-areas-problemas'} component={CadastrarAreasProblemas}/>
           </Switch>
 
       </Router>

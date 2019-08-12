@@ -16,6 +16,10 @@
   color: #61dafb;
 }
 
+.margin-dropdown {
+  margin-top: -8px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -43,7 +47,7 @@ a{
 }
 
 a:hover{
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body{

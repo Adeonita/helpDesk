@@ -10,7 +10,7 @@ class CadastrarTecnico extends Component {
     return(
       <div>
         <Container>
-        <h1>Cadastrar Técnico</h1>
+        <h1>Cadastrar Funcionário</h1>
           <Row>
             <Col>
               <FormCadastrarTecnico />
