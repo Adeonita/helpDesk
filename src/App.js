@@ -36,7 +36,7 @@ class App extends Component {
                 <li className="wow fadeIn" data-wow-duration="2s">
                   <NavDropdown className="margin-dropdown" title="Cadastrar" id="basic-nav-dropdown">
                     <NavDropdown.Item><Link to="/cadastrar-tecnico">Funcionários</Link></NavDropdown.Item>
-                    <NavDropdown.Item><Link to="/cadastrar-areas-problemas">Áreas e Problemas</Link></NavDropdown.Item>
+                    <NavDropdown.Item><Link to="/cadastrar-areas-problemas">Sertores e Problemas</Link></NavDropdown.Item>
                   </NavDropdown>
                 </li>
               </Nav>

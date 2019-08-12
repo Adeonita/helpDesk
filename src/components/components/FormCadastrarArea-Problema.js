@@ -12,7 +12,7 @@ class FormCadastrarAreaProblema extends Component {
            <Container>
                <Row className="justify-content-center " id="margin-top-bottom">
                    <Col md={5} className="text-center">
-                     <h2 className="mb-4">Area</h2>
+                     <h2 className="mb-4">Setor</h2>
                      <Card className="login card-consultar-chamado m-auto">
                        <Form>
                          <Form.Group controlId="formBasicText">
