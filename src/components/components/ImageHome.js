@@ -5,7 +5,7 @@ import './ImageHome.css';
 class ImageHome extends Component {
     render(){
         return(
-            <div className="imageHome">
+            <div className="imageHome wow fadeIn" data-wow-duration="2s">
             </div>
         );
     }

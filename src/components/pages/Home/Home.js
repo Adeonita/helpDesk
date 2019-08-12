@@ -18,7 +18,7 @@ class Home extends Component {
         return (
             <div>
                 <Container id="marginContainer">
-                    <h1>Encontrou algum problema na Uneb?<br></br> Fale Conosco</h1>
+                    <h1 className="wow fadeIn" data-wow-duration="2s">Encontrou algum problema na Uneb?<br></br> Fale Conosco</h1>
                     <ImageHome />
                     <Row>
                       <Link to="/abrir-chamado">
@@ -97,7 +97,7 @@ class Home extends Component {
                     <Col md={12} className="text-center text-footer">
                       <p>Universidade Estadual da Bahia <br></br>Silveira Martins nº 2555, Cabula<br></br>Salvador - BA</p>
                     </Col>
-                  </Row>          
+                  </Row>
                 </Container>
               </div>
         );
