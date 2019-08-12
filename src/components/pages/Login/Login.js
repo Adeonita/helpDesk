@@ -14,7 +14,7 @@ class Login extends Component {
                 <FormLogin />
                 <div className="footer-login">
                   <FooterRight color="#0F3882" />
-                  <FooterLeft color="#F24141" />
+                  <FooterLeft color="#F22B2B" />
                 </div>
             </div>
         );

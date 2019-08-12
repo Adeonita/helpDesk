@@ -67,7 +67,7 @@ class ConsultarChamado extends Component {
         </Container>
         <div className="footer-consultar-chamado">
           <FooterRight color="#0F3882" />
-          <FooterLeft color="#F24141" />
+          <FooterLeft color="#F22B2B" />
         </div>
       </div>
     );
