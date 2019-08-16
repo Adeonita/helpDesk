@@ -18,7 +18,7 @@ class Home extends Component {
         return (
             <div>
                 <Container id="marginContainer">
-                    <h1 className="wow fadeIn" data-wow-duration="2s">Encontrou algum problema na Uneb?<br></br> Fale Conosco</h1>
+                    <h1 className="wow fadeIn" data-wow-duration="2s">Encontrou algum problema no Departamento?<br></br> Fale Conosco</h1>
                     <ImageHome />
                     <Row>
                       <Link to="/abrir-chamado">

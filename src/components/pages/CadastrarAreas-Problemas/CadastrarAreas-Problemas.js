@@ -9,7 +9,7 @@ class CadastrarAreaProblema extends Component {
     render(){
         return(
             <div>
-                <h1>Cadastrar Area Problema</h1>
+                <h1>Cadastrar Setores e Problemas</h1>
                 <FormCadastrarAreaProblema />
                 <div className="footer-cadastrar-area-problema">
                   <FooterRight color="#0F3882" />

@@ -13,14 +13,15 @@ class FormCadastrarAreaProblema extends Component {
                <Row className="justify-content-center " id="margin-top-bottom">
                    <Col md={5} className="text-center">
                      <h2 className="mb-4">Setor</h2>
+                     <a href="#">+ Cadastrar um novo setor</a>
                      <Card className="login card-consultar-chamado m-auto">
                        <Form>
                          <Form.Group controlId="formBasicText">
-                           <Form.Control type="text" placeholder="Qual a área?" />
+                           <Form.Control type="text" placeholder="Qual a o setor?" />
                          </Form.Group>
                          <Row className="justify-content-center">
-                           <Button variant="outline-primary" type="submit">
-                            Cadastrar Area
+                           <Button variant="outline-primary" type="submit" >
+                            Cadastrar Setor
                            </Button>
                          </Row>
                        </Form>
