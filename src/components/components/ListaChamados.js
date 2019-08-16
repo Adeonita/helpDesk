@@ -9,8 +9,8 @@ class ListaChamados extends Component {
   constructor(props){
     super(props);
       this.state = {
-        showModal: false,
-        isHideModal: true  //Checa se o modal esta escondido
+                  showModal: false,
+                  isHideModal: true  //Checa se o modal esta escondido
       }
       this.exibeModal = this.exibeModal.bind(this);
       this.onHideModal = this.onHideModal.bind(this);

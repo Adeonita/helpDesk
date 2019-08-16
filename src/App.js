@@ -11,7 +11,7 @@ import Chamados from './components/pages/Chamados/Chamados';
 import './style/css/bootstrap.min.css';
 import logoUneb from '../src/images/logo.png';
 import CadastrarTecnico from './components/pages/CadastrarTecnico/CadastrarTecnico';
-import CadastrarAreasProblemas from './components/pages/CadastrarAreas-Problemas/CadastrarAreas-Problemas';
+import CadastrarSetor from './components/pages/CadastrarSetor/CadastrarSetor';
 
 
 class App extends Component {
@@ -36,7 +36,7 @@ class App extends Component {
                 <li className="wow fadeIn" data-wow-duration="2s">
                   <NavDropdown className="margin-dropdown" title="Cadastrar" id="basic-nav-dropdown">
                     <NavDropdown.Item><Link to="/cadastrar-tecnico">Funcionários</Link></NavDropdown.Item>
-                    <NavDropdown.Item><Link to="/cadastrar-areas-problemas">Sertores e Problemas</Link></NavDropdown.Item>
+                    <NavDropdown.Item><Link to="/cadastrar-setor">Sertores e Problemas</Link></NavDropdown.Item>
                   </NavDropdown>
                 </li>
               </Nav>
@@ -49,7 +49,7 @@ class App extends Component {
             <Route exact path={'/consultar-chamado'} component={ConsultarChamado}/>
             <Route exact path={'/chamados'} component={Chamados}/>
             <Route exact path={'/cadastrar-tecnico'} component={CadastrarTecnico}/>
-            <Route exact path={'/cadastrar-areas-problemas'} component={CadastrarAreasProblemas}/>
+            <Route exact path={'/cadastrar-setor'} component={CadastrarSetor}/>
           </Switch>
 
       </Router>
